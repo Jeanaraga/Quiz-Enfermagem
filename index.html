@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="progress">
+        <div class="progress--bar"></div>
+    </div>
+
+    <h1>Quiz 🧠</h1>
+
+    <form class="inicio">
+        <label for="nome">Digite seu nome:</label>
+        <input type="text" name="nome" id="nome" placeholder="Nome" required>
+        <button class="comecar" type="button" onclick="showQuestion()">Começar</button>
+    </form>
+
+    <div class="questionArea">
+        <div class="question">...</div>
+        <div class="options">
+            
+        </div>
+    </div>
+
+    <div class="scoreArea">
+        <img src="https://i0.wp.com/trabalhosparaescola.com.br/wp-content/uploads/2019/05/enfermagem.png?fit=1600%2C900&ssl=1" class="prizeImage" />
+        <div class="scoreText1">Parabéns!</div>
+        <div class="scorePct">Acertou 99%</div>
+        <div class="scoreText2">Você respondeu 9 questões e acertou 8.</div>
+        <button>Fazer novamente</button>
+    </div>
+
+    <footer>Desenvolvido por @PPRT.dev</footer>
+
+    <script src="questions.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

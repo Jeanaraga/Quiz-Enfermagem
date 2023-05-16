@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(./Design\ sem\ nome.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    color: #ffffff;
+    margin: 20px 0;
+    font-size: 42px;
+    letter-spacing: 2px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.inicio {
+    width: 40vw;
+    height: 40vh;
+    background-color: #ffffffab;
+    border: 2px solid #593493;
+    border-radius: 10px;
+    box-shadow: 5px 5px 27px 1px #000;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-family: 20px;
+}
+
+.inicio input {
+    border: 1px solid #000;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.inicio button {
+    padding: 5px 20px;
+    background-color: #593493;
+    border: 1px solid #000;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s ease-in;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+.inicio input:focus {
+    border: 1px solid #593493;
+    outline: 1px solid #593493;
+}
+
+.inicio button:hover {
+    background-color: #ff8000;
+    padding: 5px 40px;
+}
+
+.progress {
+    height: 5px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+.progress--bar {
+    background-color: #593493;
+    filter: brightness(125%);
+    height: 100%;
+    width: 0;
+    transition: all ease .5s;
+}
+
+.questionArea,
+.scoreArea {
+    display: none;
+}
+
+.questionArea {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 700px;
+    height: 50vh;
+    width: 100%;
+    background-color: #ffffffab;
+    border: 2px solid #593493;
+    border-radius: 10px;
+    box-shadow: 5px 5px 27px 1px #000;
+    font-family: 'Poppins', sans-serif;
+}
+
+.question {
+    color: #000000;
+    font-size: 18px;
+    margin: 20px 0;
+}
+.option {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    background-color: #ff8000;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    margin: 10px 20px;
+    color: #ffffff;
+    font-size: 14px;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.3s ease-in;
+}
+.option span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    margin-left: 5px;
+    margin-right: 10px;
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+}
+.option:hover {
+    background-color: #583493c2;
+    border: 1px solid #593493;
+}
+
+.scoreArea {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    border-radius: 20px;
+    margin: 10px;
+    text-align: center;
+}
+.prizeImage {
+    width: auto;
+    height: 100px;
+    margin-bottom: 10px;
+}
+.scoreText1 {
+    color: #000;
+    font-size: 23px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.scorePct {
+    color: #0d630d;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.scoreText2 {
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.scoreArea button {
+    border: 0;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #CCC;
+    padding: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.scoreArea button:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+footer {
+    margin-top: 20px;
+    color: #FFF;
+    font-size: 13px;
+}
+
+
+@media screen and (max-width: 800px) {
+    .questionArea {
+        max-width: 400px;
+    }
+    .question {
+        font-size: 14px;
+        text-align: center;
+    }
+    .option {
+        height: 40px;
+        font-size: 12px;
+    }
+    .option span {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        margin-left: 5px;
+        margin-right: 10px;
+    }
+  }
