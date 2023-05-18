@@ -192,8 +192,11 @@ footer {
 
 
 @media screen and (max-width: 800px) {
+    body {
+        padding: 10px;
+    }
     .questionArea {
-        max-width: 400px;
+        max-width: 380px;
     }
     .question {
         font-size: 18px;
