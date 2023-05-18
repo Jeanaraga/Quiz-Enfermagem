@@ -196,11 +196,11 @@ footer {
         max-width: 400px;
     }
     .question {
-        font-size: 14px;
+        font-size: 15px;
         text-align: center;
     }
     .option {
-        height: 40px;
+        height: 50px;
         font-size: 12px;
     }
     .option span {
@@ -210,4 +210,12 @@ footer {
         margin-left: 5px;
         margin-right: 10px;
     }
+    .inicio {
+        width: 70vw;
+        height: 50vh;
+    }
+    .questionArea {
+        height: 60vh;
+    }
+    
   }
