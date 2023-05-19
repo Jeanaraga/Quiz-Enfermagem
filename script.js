@@ -68,12 +68,12 @@ function finishQuiz() {
   document.querySelector('.scorePct').innerHTML = `Acertou ${Math.floor(points)}%`;
   document.querySelector('.scoreText2').innerHTML = `Você respondeu ${questions.length} questões e acertou ${correctAnswer}`;
 
-  // Armazena os valores de nome e resultado no Firestore
-  armazenarDadosUsuario(valorNome, Math.floor(points));
 
   document.querySelector('.scoreArea').style.display = 'block';
   document.querySelector('.questionArea').style.display = 'none';
   document.querySelector('.progress--bar').style.width = '100%';
+  // Armazena os valores de nome e resultado no Firestore
+  armazenarDadosUsuario(valorNome, Math.floor(points));
 }
 
 function resetEvent() {
