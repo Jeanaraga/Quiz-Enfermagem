@@ -12,7 +12,7 @@ document.querySelector('.scoreArea button').addEventListener('click', resetEvent
 function showQuestion() {
   valorNome = document.querySelector('#nome').value;
 
-  if (questions[currentQuestion]) {
+  if (currentQuestion < questions.length) {
     document.querySelector('.inicio').style.display = 'none';
     document.querySelector('.inicio').style.display = 'none';
     let q = questions[currentQuestion];
@@ -35,6 +35,7 @@ function showQuestion() {
     document.querySelectorAll('.options .option').forEach((item) => {
       item.addEventListener('click', optionClickEvent);
     });
+
   } else {
     finishQuiz();
   }
@@ -68,7 +69,6 @@ function finishQuiz() {
   document.querySelector('.scorePct').innerHTML = `Acertou ${Math.floor(points)}%`;
   document.querySelector('.scoreText2').innerHTML = `Você respondeu ${questions.length} questões e acertou ${correctAnswer}`;
 
-
   document.querySelector('.scoreArea').style.display = 'block';
   document.querySelector('.questionArea').style.display = 'none';
   document.querySelector('.progress--bar').style.width = '100%';
@@ -88,18 +88,36 @@ function resetEvent() {
 const usuariosRef = firebase.firestore().collection('usuarios');
 
 function armazenarDadosUsuario(nome, resultado) {
-    usuariosRef
-      .add({
-        nome: nome,
-        resultado: resultado,
-      })
-      .then(function (docRef) {
-        console.log('Dados armazenados com sucesso!');
-        // Exemplo de alerta para indicar que os dados foram armazenados
-        alert('Dados armazenados com sucesso!');
-      })
-      .catch(function (error) {
-        console.error('Erro ao armazenar os dados: ', error);
-      });
-  }
-  
+  usuariosRef
+    .add({
+      nome: nome,
+      resultado: resultado,
+    })
+    .then(function (docRef) {
+      console.log('Dados armazenados com sucesso!');
+      // Exemplo de alerta para indicar que os dados foram armazenados
+      alert('Dados armazenados com sucesso!');
+      // Verifica se o documento foi adicionado ao Firestore
+      verificarResultado(docRef.id);
+    })
+    .catch(function (error) {
+      console.error('Erro ao armazenar os dados: ', error);
+    });
+}
+
+function verificarResultado(docId) {
+  usuariosRef
+    .doc(docId)
+    .get()
+    .then(function (doc) {
+      if (doc.exists) {
+        console.log('Resultado armazenado: ', doc.data());
+      } else {
+        console.log('Documento não encontrado.');
+      }
+    })
+    .catch(function (error) {
+      console.error('Erro ao obter o resultado: ', error);
+    });
+}
+
