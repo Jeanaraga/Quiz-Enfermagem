@@ -125,15 +125,13 @@ function verificarResultado(docId) {
 
 // Função para recuperar os dados dos usuários
 function obterDadosUsuarios() {
-  usuariosRef
-    .get()
-    .then(function (querySnapshot) {
+  usuariosRef.get().then(function (querySnapshot) {
       querySnapshot.forEach(function (doc) {
-        console.log(doc.id, '=>', doc.data());
+        console.log(doc.id, "=>", doc.data());
       });
     })
     .catch(function (error) {
-      console.error('Erro ao obter os dados dos usuários: ', error);
+      console.error("Erro ao obter os dados dos usuários: ", error);
     });
 }
 
