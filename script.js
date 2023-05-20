@@ -75,6 +75,9 @@ function finishQuiz() {
 
     contadorFim++
 
+    const sound = document.getElementById('sound');
+    sound.play();
+
     localStorage.setItem('contadorFim', contadorFim.toString());
     document.getElementById('quizCount').innerHTML = `Quiz respondido pela ${contadorFim}º vez`;
 

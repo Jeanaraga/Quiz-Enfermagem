@@ -102,16 +102,16 @@ let questions = [
     {
         question: 'Verdadeiro ou falso: A administração de medicamentos por via intramuscular é mais rápida do que por via intravenosa.',
         options: [
-            'Verdadeiro',
-            'Falso',
+            'Verdadeiro ',
+            'Falso ',
         ],
         answer: 1
     },
     {
         question: 'Verdadeiro ou falso: O uso de luvas é necessário apenas em procedimentos cirúrgicos.',
         options: [
-            'Verdadeiro ✔️',
-            'Falso ❌',
+            'Verdadeiro ',
+            'Falso ',
         ],
         answer: 1
     },
@@ -136,9 +136,9 @@ let questions = [
         answer: 1
     },
     {
-        question: 'Como você descreveria a importância dos enfermeiros na prestação de cuidados de saúde?',
+        question: 'Em homenagem aos enfermeiros, expressamos nossa profunda gratidão por sua dedicação incansável, habilidades profissionais e corações compassivos. Vocês são verdadeiros heróis e heroínas, proporcionando cuidados essenciais, conforto e esperança aos pacientes. Sua paixão e comprometimento são inspiradores, e vocês merecem toda a admiração do mundo. Obrigado por serem os pilares da saúde e por tocarem vidas de maneira tão significativa!',
         options: [
-            'Profissionais dedicados, comprometidos e essenciais para o bem-estar dos pacientes.',
+            'Finalizar Quiz!',
         ],
         answer: 0
     },
