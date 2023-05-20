@@ -60,7 +60,7 @@ function finishQuiz() {
     let points = (correctAnswer / questions.length) * 100;
 
     if(points <= 30) {
-        document.querySelector('.scoreText1').innerHTML = `Precisa estudar mais ${valorNome}😕`;
+        document.querySelector('.scoreText1').innerHTML = `Na próxima você sai melhor ${valorNome}😕`;
         document.querySelector('.scorePct').style.color = "#ff0000";
     } else if(points > 30 && points <= 60) {
         document.querySelector('.scoreText1').innerHTML = `Muito bem ${valorNome}🙂`;
