@@ -115,13 +115,16 @@ h1 {
 
 .question {
     color: #000000;
-    font-size: 18px;
+    font-size: 16px;
     margin: 20px 0;
+    text-align: center;
+    padding: 0 10px;
 }
 .option {
     display: flex;
     align-items: center;
-    height: 40px;
+    height: 50px;
+    min-width: 60%;
     background-color: #ff8000;
     border: 1px solid #000000;
     border-radius: 10px;
@@ -155,28 +158,34 @@ h1 {
     border-radius: 20px;
     margin: 10px;
     text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 60vh;
 }
+.perigo {
+    color: #000000;
+    font-size: 10px;
+    font-weight: bold;
+}
+
 .prizeImage {
     width: auto;
     height: 100px;
-    margin-bottom: 10px;
 }
 .scoreText1 {
     color: #000;
     font-size: 23px;
     font-weight: bold;
-    margin-bottom: 10px;
 }
 .scorePct {
     color: #0d630d;
     font-size: 30px;
     font-weight: bold;
-    margin-bottom: 10px;
 }
 .scoreText2 {
     font-size: 16px;
     color: #000;
-    margin-bottom: 10px;
 }
 
 .scoreArea button {
@@ -185,11 +194,13 @@ h1 {
     background-color: rgba(0, 0, 0, 0.5);
     color: #CCC;
     padding: 10px;
-    margin-top: 20px;
     cursor: pointer;
+    transition: 0.3s ease-in;
 }
 .scoreArea button:hover {
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: #593493;
+    padding: 10px 15px;
+    cursor: pointer;
 }
 
 footer {
@@ -211,7 +222,7 @@ footer {
         text-align: center;
     }
     .option {
-        height: 50px;
+        height: 60px;
         font-size: 12px;
     }
     .option span {
@@ -226,7 +237,7 @@ footer {
         height: 50vh;
     }
     .questionArea {
-        height: 60vh;
+        height: 70vh;
     }
     
   }

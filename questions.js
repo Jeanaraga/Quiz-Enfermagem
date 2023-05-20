@@ -99,4 +99,47 @@ let questions = [
         ],
         answer: 2
     },
+    {
+        question: 'Verdadeiro ou falso: A administração de medicamentos por via intramuscular é mais rápida do que por via intravenosa.',
+        options: [
+            'Verdadeiro',
+            'Falso',
+        ],
+        answer: 1
+    },
+    {
+        question: 'Verdadeiro ou falso: O uso de luvas é necessário apenas em procedimentos cirúrgicos.',
+        options: [
+            'Verdadeiro ✔️',
+            'Falso ❌',
+        ],
+        answer: 1
+    },
+    {
+        question: 'Qual é o órgão responsável por regular a prática da enfermagem no Brasil?',
+        options: [
+            'Ministério da Saúde',
+            'Conselho Federal de Medicina',
+            'Agência Nacional de Vigilância Sanitária',
+            'Conselho Regional de Enfermagem',
+        ],
+        answer: 3
+    },
+    {
+        question: 'Qual é a principal função do técnico de enfermagem em relação aos curativos de feridas?',
+        options: [
+            'Realizar a limpeza e desinfecção das feridas',
+            'Realizar a troca adequada dos curativos conforme orientação da equipe de saúde',
+            'Prescrever medicamentos tópicos para acelerar a cicatrização',
+            'Realizar o fechamento das feridas com pontos',
+        ],
+        answer: 1
+    },
+    {
+        question: 'Como você descreveria a importância dos enfermeiros na prestação de cuidados de saúde?',
+        options: [
+            'Profissionais dedicados, comprometidos e essenciais para o bem-estar dos pacientes.',
+        ],
+        answer: 0
+    },
 ];

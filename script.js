@@ -60,13 +60,13 @@ function finishQuiz() {
     let points = (correctAnswer / questions.length) * 100;
 
     if(points <= 30) {
-        document.querySelector('.scoreText1').innerHTML = `Tá ruim em ${valorNome}😕`;
+        document.querySelector('.scoreText1').innerHTML = `Precisa estudar mais ${valorNome}😕`;
         document.querySelector('.scorePct').style.color = "#ff0000";
-    } else if(points > 30 && points <= 70) {
-        document.querySelector('.scoreText1').innerHTML = `Bom ${valorNome}🙂`;
+    } else if(points > 30 && points <= 60) {
+        document.querySelector('.scoreText1').innerHTML = `Muito bem ${valorNome}🙂`;
         document.querySelector('.scorePct').style.color = "yellow";
     } else {
-        document.querySelector('.scoreText1').innerHTML = `Muito Bom, Parabéns ${valorNome}🙂🏆`;
+        document.querySelector('.scoreText1').innerHTML = `Arrasou, Parabéns ${valorNome}🙂🏆`;
         document.querySelector('.scorePct').style.color = "green";
     }
 
@@ -79,7 +79,7 @@ function finishQuiz() {
     document.getElementById('quizCount').innerHTML = `Quiz respondido pela ${contadorFim}º vez`;
 
 
-    document.querySelector('.scoreArea').style.display = 'block';
+    document.querySelector('.scoreArea').style.display = 'flex';
     document.querySelector('.questionArea').style.display = 'none';
     document.querySelector('.progress--bar').style.width = '100%';
 }
