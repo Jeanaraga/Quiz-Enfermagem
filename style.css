@@ -205,6 +205,32 @@ h1 {
     cursor: pointer;
 }
 
+.scoreArea.aviso {
+    max-width: 460px;
+}
+
+.scoreArea.aviso p {
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+}
+
+.scoreArea.aviso a {
+    font-size: 16px;
+    padding: 10px 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ccc;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: 0.3s ease-in;
+}
+
+.scoreArea.scoreArea.aviso a:hover {
+    background-color: #593493;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
 footer {
     margin-top: 20px;
     color: #FFF;

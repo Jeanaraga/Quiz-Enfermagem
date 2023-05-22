@@ -13,6 +13,14 @@ let contadorFim = parseInt(localStorage.getItem('contadorFim')) || 0;
 document.querySelector('.scoreArea button').addEventListener('click', resetEvent);
 
 // Function
+function startEvent() {
+    if (document.querySelector('#nome').value !== ''){
+        showQuestion()
+    } else {
+        alert("Colocar seu nome ou apelido")
+    }
+}
+
 function showQuestion() {
      valorNome = document.querySelector('#nome').value;
 
@@ -83,6 +91,7 @@ function finishQuiz() {
 
 
     document.querySelector('.scoreArea').style.display = 'flex';
+    document.querySelector('.scoreArea.aviso').style.display = 'flex';
     document.querySelector('.questionArea').style.display = 'none';
     document.querySelector('.progress--bar').style.width = '100%';
 }
